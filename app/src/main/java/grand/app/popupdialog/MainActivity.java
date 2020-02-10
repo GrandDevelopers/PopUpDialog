@@ -23,11 +23,12 @@ public class MainActivity extends AppCompatActivity {
                         .setFirstButtonText("Login")
                         .setFirstTextColor(R.color.colorPrimary)
                         .setSecondButtonText("Register")
-                        .setSecondTextColor(R.color.colorAccent)
-//                        .setFirstButtonBackground('your_first_btn_drawable')
-//                        .setSecondButtonBackground('your_second_btn_drawable')
-                        .setImage(R.mipmap.ic_launcher,70, 70)
-                        .setExitColor(R.color.colorPrimaryDark)
+                        .setSecondTextColor(R.color.colorAccent2)
+                        .setBackgroundDialogColor(R.color.colorAccent3)
+                        .setFirstBackgroundColor(R.color.colorPrimary)
+                        .setSecondBackgroundColor(R.color.colorAccent)
+                        .setImage(R.mipmap.ic_launcher)
+//                        .setExitColor(R.color.colorPrimaryDark)
                         .show(new PopUpDialogHelperActionInterface() {
                             @Override
                             public void onFirstButton(Dialog dialog, View view) {

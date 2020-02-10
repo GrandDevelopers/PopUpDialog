@@ -1,0 +1,146 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/img_dialog_close"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_dialog_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Login Dialog"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
+<!--            android:textColor="#000"-->
+<!--            android:textStyle="bold" />-->
+<!--        ​-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_dialog_message"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="Text Dialog"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:textColor="@android:color/black" />-->
+<!--        ​-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img_dialog"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:visibility="gone" />-->
+<!--        ​-->
+<!--        ​-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_dialog_popup_actions"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/btn_dialog_first"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:text="Login"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textStyle="bold" />-->
+<!--            ​-->
+<!--            ​-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/btn_dialog_second"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:text="Remove Item"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textStyle="bold" />-->
+<!--            ​-->
+<!--        </LinearLayout>-->
+
+
+
+
+<!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ll_dialog_popup_actions"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:weightSum="2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <androidx.appcompat.widget.AppCompatButton&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/btn_dialog_first"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginEnd="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Login"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textAppearance="@style/TextAppearance.AppCompat.Small"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textStyle="bold" />&ndash;&gt;-->
+<!--&lt;!&ndash;            ​&ndash;&gt;-->
+<!--&lt;!&ndash;            ​&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <androidx.appcompat.widget.AppCompatButton&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/btn_dialog_second"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginEnd="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginBottom="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Remove Item"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textAllCaps="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textAppearance="@style/TextAppearance.AppCompat.Small"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@android:color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textStyle="bold" />&ndash;&gt;-->
+<!--&lt;!&ndash;            ​&ndash;&gt;-->
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+<!--        ​-->
+<!--    </LinearLayout>-->
+<!--    ​-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_dialog_close"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:src="@android:drawable/ic_delete"-->
+<!--        android:tint="@color/colorPrimary" />-->
+<!--</RelativeLayout>-->
+
