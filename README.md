@@ -1,5 +1,5 @@
 # GrandDevelopersTeamDialog
-[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog/1.0.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)
+[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog/1.0)](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)
 
 Download
 --------
@@ -24,7 +24,7 @@ Or Maven:
 <dependency>
     <groupId>com.github.GrandDevelopers</groupId>
     <artifactId>Mvil</artifactId>
-    <version>x.x</version>
+    <version>1.0</version>
 </dependency>
 <repositories>
      <repository>
