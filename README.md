@@ -1,4 +1,4 @@
-# GrandDialog
+# GrandDevelopersTeamDialog
 [![](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)
 
 Download
