@@ -1,8 +1,45 @@
-# PopUpDialog
+# GrandDialog
+[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog/1.0.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)
+
+Download
+--------
+
+Or use Gradle:
+
+```gradle
+repositories {
+  mavenCentral()
+  google()
+  maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+  implementation 'com.github.GrandDevelopers:PopUpDialog:x.x'
+}
+```
+
+Or Maven:
+
+```xml
+<dependency>
+    <groupId>com.github.GrandDevelopers</groupId>
+    <artifactId>Mvil</artifactId>
+    <version>x.x</version>
+</dependency>
+<repositories>
+     <repository>
+         <id>jitpack.io</id>
+         <url>https://jitpack.io</url>
+     </repository>
+</repositories>
+```
+
+
+# PopUpGrandDevelopersDialog
 Popup Dialog is a simple, customizable popup dialog written in Java.
 
 
-# PopUpDialog
+## PopUpDialog
                 new PopUp(MainActivity.this)
                         .setTitle("Dialog Grand PopUp")
                         .setTitleColor(Color.BLACK)
@@ -21,17 +58,15 @@ Popup Dialog is a simple, customizable popup dialog written in Java.
                         .show(new IPopUpActionInterface() {
                             @Override
                             public void onFirstButton(Dialog dialog, View view) {
-                                Toast.makeText(MainActivity.this, "First Click", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onSecondButton(Dialog dialog, View view) {
-                                Toast.makeText(MainActivity.this, "Second Click", Toast.LENGTH_SHORT).show();
                             }
                         });
                         
                         
-# PopUpCircleDialog
+## PopUpCircleDialog
 
             new PopUpCircle(MainActivity.this)
                         .setTitle("Dialog Grand PopUp")
@@ -51,12 +86,10 @@ Popup Dialog is a simple, customizable popup dialog written in Java.
                         .show(new IPopUpActionInterface() {
                             @Override
                             public void onFirstButton(Dialog dialog, View view) {
-                                Toast.makeText(MainActivity.this, "First Click", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onSecondButton(Dialog dialog, View view) {
-                                Toast.makeText(MainActivity.this, "Second Click", Toast.LENGTH_SHORT).show();
                             }
                         });
 
