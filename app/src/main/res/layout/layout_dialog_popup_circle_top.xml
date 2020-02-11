@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="0dp"
+    card_view:cardUseCompatPadding="false"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/card_container"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_dialog_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="false">
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_dialog_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="KLASd asd as"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                    ​
+
+                    <TextView
+                        android:id="@+id/tv_dialog_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Text DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText DialogText Dialog"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black" />
+
+                    ​
+
+                    <LinearLayout
+                        android:id="@+id/ll_dialog_popup_actions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/btn_dialog_first"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Login"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                        ​
+                        ​
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/btn_dialog_second"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:text="Remove Item"
+                            android:paddingTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                        ​
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_dialog_close"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@android:drawable/ic_delete" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view2"
+            card_view:cardCornerRadius="30dp"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="false"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:background="@android:color/transparent"
+
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+            <ImageView
+                android:id="@+id/img_dialog"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
