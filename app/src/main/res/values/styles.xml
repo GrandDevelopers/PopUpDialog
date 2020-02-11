@@ -8,15 +8,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="PauseDialogAnimation">
-        <item name="android:windowEnterAnimation">@anim/jump_fast</item>
-        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
-    </style>
-    <style name="PauseDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
-        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
-        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
-    </style>
-
-
 </resources>

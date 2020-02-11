@@ -1,10 +1,12 @@
-package grand.app.popupdialog;
+package grand.app.granddialog.popupdialog;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 
 import androidx.core.content.ContextCompat;
+import grand.app.granddialog.R;
 
 public class PopUpCircle extends BasePopUp {
     public PopUpCircle(Context context) {
@@ -69,7 +71,8 @@ public class PopUpCircle extends BasePopUp {
     }
 
     public PopUpCircle setExitColor(int color) {
-        imageExit.setColorFilter(ContextCompat.getColor(context,color), android.graphics.PorterDuff.Mode.MULTIPLY);
+        String hexColor = "#"+Integer.toHexString(ContextCompat.getColor(context, color));
+        imageExit.setColorFilter(Color.parseColor(hexColor));
         return this;
     }
 

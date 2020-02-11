@@ -10,11 +10,13 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_dialog_popup"
         android:layout_gravity="center"
-        android:id="@+id/tv_dialog_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="PopUpDialog"
+        android:textStyle="bold"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -22,12 +24,14 @@
 
 
     <TextView
-        android:id="@+id/tv_dialog_action2"
+        android:id="@+id/tv_dialog_circle_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Hello World!"
+        android:text="PopUp Circle Dialog"
+        android:textStyle="bold"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

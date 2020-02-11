@@ -1,4 +1,4 @@
-package grand.app.popupdialog;
+package grand.app.granddialog.popupdialog;
 
 import android.app.Dialog;
 import android.view.View;

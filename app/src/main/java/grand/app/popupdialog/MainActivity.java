@@ -1,6 +1,9 @@
 package grand.app.popupdialog;
 
 import androidx.appcompat.app.AppCompatActivity;
+import grand.app.granddialog.popupdialog.IPopUpActionInterface;
+import grand.app.granddialog.popupdialog.PopUp;
+import grand.app.granddialog.popupdialog.PopUpCircle;
 
 import android.app.Dialog;
 import android.graphics.Color;
@@ -14,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.tv_dialog_action).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.tv_dialog_popup).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new PopUp(MainActivity.this)
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                         .setFirstBackgroundColor(R.color.colorPrimary)
                         .setSecondBackgroundColor(R.color.colorPrimaryDark)
                         .setImage(R.drawable.grand)
-                        .setExitColor(R.color.design_default_color_on_secondary)
+                        .setExitColor(R.color.colorGrey)
                         .setExitEnable(true)
                         .show(new IPopUpActionInterface() {
                             @Override
@@ -43,13 +46,11 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Second Click", Toast.LENGTH_SHORT).show();
                             }
                         });
-
-
             }
         });
 
 
-        findViewById(R.id.tv_dialog_action2).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.tv_dialog_circle_top).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new PopUpCircle(MainActivity.this)
@@ -64,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
                         .setBackgroundDialogColor(Color.WHITE)
                         .setFirstBackgroundColor(R.color.colorPrimary)
                         .setSecondBackgroundColor(R.color.colorPrimaryDark)
-                        .setImage(R.drawable.grand)
-                        .setExitColor(R.color.design_default_color_on_secondary)
+                        .setImage(R.drawable.info)
+                        .setExitColor(R.color.colorPrimary)
                         .setExitEnable(true)
                         .show(new IPopUpActionInterface() {
                             @Override

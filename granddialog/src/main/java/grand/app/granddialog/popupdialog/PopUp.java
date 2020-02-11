@@ -1,4 +1,4 @@
-package grand.app.popupdialog;
+package grand.app.granddialog.popupdialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.view.Window;
 
 import androidx.core.content.ContextCompat;
+import grand.app.granddialog.R;
 
 public class PopUp extends BasePopUp {
-    private View view = null;
 
     public PopUp(Context context) {
         super(context, LayoutInflater.from(context).inflate(R.layout.layout_dialog_popup, null, true));
@@ -75,7 +75,8 @@ public class PopUp extends BasePopUp {
     }
 
     public PopUp setExitColor(int color) {
-        imageExit.setColorFilter(ContextCompat.getColor(context, color), android.graphics.PorterDuff.Mode.MULTIPLY);
+        String hexColor = "#"+Integer.toHexString(ContextCompat.getColor(context, color));
+        imageExit.setColorFilter(Color.parseColor(hexColor));
         return this;
     }
 

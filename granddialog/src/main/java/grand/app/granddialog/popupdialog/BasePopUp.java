@@ -1,9 +1,8 @@
-package grand.app.popupdialog;
+package grand.app.granddialog.popupdialog;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.Window;
@@ -13,7 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
+import grand.app.granddialog.R;
 
 public class BasePopUp {
     protected Context context;
