@@ -1,5 +1,5 @@
 # GrandDevelopersTeamDialog
-[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog/1.0)](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)
+[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog/1.0.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)
 
 Download
 --------
@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.GrandDevelopers:PopUpDialog:x.x'
+  implementation 'com.github.GrandDevelopers:PopUpDialog:1.0'
 }
 ```
 
