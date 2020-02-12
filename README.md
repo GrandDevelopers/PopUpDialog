@@ -1,4 +1,5 @@
 # Grand Developers Team Popup Dialog
+[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog)
 
 Download
 --------
