@@ -1,5 +1,4 @@
 # Grand Developers Team Popup Dialog
-[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog)
 
 Download
 --------
@@ -14,11 +13,13 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.GrandDevelopers:PopUpDialog:1.0'
+  implementation 'com.github.GrandDevelopers:PopUpDialog:x.x'
 }
 
 ```
-https://jitpack.io/v/jitpack/maven-simple.svg
+
+where `{latest version}` corresponds to published version in [ ![Download]
+[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog)
 
 Or Maven:
 
@@ -26,7 +27,7 @@ Or Maven:
 <dependency>
     <groupId>com.github.GrandDevelopers</groupId>
     <artifactId>Mvil</artifactId>
-    <version>1.0</version>
+    <version>x.x</version>
 </dependency>
 <repositories>
      <repository>
