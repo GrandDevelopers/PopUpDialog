@@ -11,83 +11,83 @@ import android.view.Window;
 import androidx.core.content.ContextCompat;
 import grand.app.granddialog.R;
 
-public class PopUp extends BasePopUp {
+public class GrPopUpSimple extends BasePopUp {
 
-    public PopUp(Context context) {
+    public GrPopUpSimple(Context context) {
         super(context, LayoutInflater.from(context).inflate(R.layout.layout_dialog_popup, null, true));
     }
 
-    public PopUp setTitle(String title) {
+    public GrPopUpSimple setTitle(String title) {
         txtTitle.setText(title);
         return this;
     }
 
-    public PopUp setTitleColor(int color) {
+    public GrPopUpSimple setTitleColor(int color) {
         txtTitle.setTextColor(color);
         return this;
     }
 
-    public PopUp setFirstButtonText(String firstButtonText) {
+    public GrPopUpSimple setFirstButtonText(String firstButtonText) {
         btnFirst.setText(firstButtonText);
         return this;
     }
 
-    public PopUp setFirstTextColor(int color) {
+    public GrPopUpSimple setFirstTextColor(int color) {
         this.btnFirst.setTextColor(color);
         return this;
     }
 
-    public PopUp setSecondTextColor(int color) {
+    public GrPopUpSimple setSecondTextColor(int color) {
         this.btnSecond.setTextColor(color);
         return this;
     }
 
-    public PopUp setSecondButtonText(String secondButtonText) {
+    public GrPopUpSimple setSecondButtonText(String secondButtonText) {
         btnSecond.setText(secondButtonText);
         return this;
     }
 
-    public PopUp setMessage(String message) {
+    public GrPopUpSimple setMessage(String message) {
 //        this.message = message;
         txtMessage.setText(message);
         return this;
     }
 
-    public PopUp setMessageColor(int color) {
+    public GrPopUpSimple setMessageColor(int color) {
         txtMessage.setTextColor(color);
         return this;
     }
 
-    public PopUp setBackgroundDialogColor(int color) {
+    public GrPopUpSimple setBackgroundDialogColor(int color) {
         cardView.setBackgroundColor(color);
         cardView.setCardBackgroundColor(color);
         return this;
     }
 
-    public PopUp setSecondBackgroundColor(int color) {
+    public GrPopUpSimple setSecondBackgroundColor(int color) {
         btnFirst.setBackgroundResource(color);
         return this;
     }
 
-    public PopUp setFirstBackgroundColor(int color) {
+    public GrPopUpSimple setFirstBackgroundColor(int color) {
         btnSecond.setBackgroundResource(color);
         return this;
     }
 
-    public PopUp setExitColor(int color) {
+    public GrPopUpSimple setExitColor(int color) {
         String hexColor = "#"+Integer.toHexString(ContextCompat.getColor(context, color));
         imageExit.setColorFilter(Color.parseColor(hexColor));
         return this;
     }
 
-    public PopUp setImage(int image) {
+    public GrPopUpSimple setImage(int image) {
         imageDialog.setVisibility(View.VISIBLE);
         imageDialog.setImageResource(image);
         return this;
     }
 
 
-    public PopUp setExitEnable(boolean status) {
+    public GrPopUpSimple setExitEnable(boolean status) {
         if (!status)
             imageExit.setVisibility(View.GONE);
         return this;

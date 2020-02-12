@@ -14,17 +14,17 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 import grand.app.granddialog.R;
 
-public class BasePopUp {
-    protected Context context;
-    protected View view = null;
+abstract class BasePopUp {
+    Context context;
+    View view = null;
 
-    protected AppCompatTextView btnFirst, btnSecond;
-    protected TextView txtTitle, txtMessage;
-    protected ImageView imageDialog;
-    protected AppCompatImageView imageExit;
-    protected CardView cardView;
+    AppCompatTextView btnFirst, btnSecond;
+    TextView txtTitle, txtMessage;
+    ImageView imageDialog;
+    AppCompatImageView imageExit;
+    CardView cardView;
 
-    public BasePopUp(Context context, View view) {
+    BasePopUp(Context context, View view) {
         this.context = context;
         this.view = view;
         init();

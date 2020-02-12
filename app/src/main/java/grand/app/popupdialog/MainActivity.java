@@ -1,9 +1,9 @@
 package grand.app.popupdialog;
 
 import androidx.appcompat.app.AppCompatActivity;
+import grand.app.granddialog.popupdialog.GrPopUpSimple;
 import grand.app.granddialog.popupdialog.IPopUpActionInterface;
-import grand.app.granddialog.popupdialog.PopUp;
-import grand.app.granddialog.popupdialog.PopUpCircle;
+import grand.app.granddialog.popupdialog.GrPopUpCircle;
 
 import android.app.Dialog;
 import android.graphics.Color;
@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_dialog_popup).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new PopUp(MainActivity.this)
-                        .setTitle("Dialog Grand PopUp")
+                new GrPopUpSimple(MainActivity.this)
+                        .setTitle("Dialog Grand GrPopUpSimple")
                         .setTitleColor(Color.BLACK)
                         .setMessage("Please complete this action")
                         .setMessageColor(Color.GRAY)
@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_dialog_circle_top).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new PopUpCircle(MainActivity.this)
-                        .setTitle("Dialog Grand PopUp")
+                new GrPopUpCircle(MainActivity.this)
+                        .setTitle("Dialog Grand GrPopUpSimple")
                         .setTitleColor(Color.BLACK)
                         .setMessage("Please complete this action")
                         .setMessageColor(Color.GRAY)
