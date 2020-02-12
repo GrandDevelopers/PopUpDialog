@@ -40,7 +40,7 @@ Popup Dialog is a simple, customizable popup dialog written in Java.
 
 
 ## PopUpDialog
-                new PopUp(MainActivity.this)
+                new GrPopUpSimple(MainActivity.this)
                         .setTitle("Dialog Grand PopUp")
                         .setTitleColor(Color.BLACK)
                         .setMessage("Please complete this action")
@@ -68,7 +68,7 @@ Popup Dialog is a simple, customizable popup dialog written in Java.
                         
 ## PopUpCircleDialog
 
-            new PopUpCircle(MainActivity.this)
+            new GrPopUpCircle(MainActivity.this)
                         .setTitle("Dialog Grand PopUp")
                         .setTitleColor(Color.BLACK)
                         .setMessage("Please complete this action")
