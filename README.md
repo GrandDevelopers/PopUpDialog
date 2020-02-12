@@ -1,5 +1,4 @@
 # Grand Developers Team Popup Dialog
-[![](https://jitpack.io/v/GrandDevelopers/PopUpDialog/1.0.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog/1.0)
 
 Download
 --------
@@ -16,7 +15,9 @@ repositories {
 dependencies {
   implementation 'com.github.GrandDevelopers:PopUpDialog:1.0'
 }
+
 ```
+https://jitpack.io/v/jitpack/maven-simple.svg
 
 Or Maven:
 
@@ -33,13 +34,13 @@ Or Maven:
      </repository>
 </repositories>
 ```
-
+https://jitpack.io/v/jitpack/maven-simple.svg
 
 # PopUpGrandDevelopersDialog
 Popup Dialog is a simple, customizable popup dialog written in Java.
 
 
-## PopUpDialog
+## PopUpSimpleDialog
                 new GrPopUpSimple(MainActivity.this)
                         .setTitle("Dialog Grand PopUp")
                         .setTitleColor(Color.BLACK)
