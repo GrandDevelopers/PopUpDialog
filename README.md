@@ -18,7 +18,7 @@ dependencies {
 
 ```
 
-where `{latest version}` corresponds to published version in [ ![Download]
+install lateset version updated
 [![](https://jitpack.io/v/GrandDevelopers/PopUpDialog.svg)](https://jitpack.io/#GrandDevelopers/PopUpDialog)
 
 Or Maven:
