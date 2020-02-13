@@ -1,6 +1,6 @@
 # Grand Developers Team Popup Dialog
 
-![Alt Text](http://2grand.net/img/gr.gif)
+<img src="http://2grand.net/img/gr.gif" width="120" height="120" />
 
 Download
 --------
